@@ -1,10 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: '爾灣愛修基督教會',
+    title: 'IACC',
     description: '爾灣愛修基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越',
     author: 'Michael Chen',
+    pages: [
+      {
+        label: 'Home',
+        url: '/',
+      }, {
+        label: 'About',
+        url: '/about',
+      }, {
+        label: 'Blog',
+        url: '/blog',
+      }, {
+        label: 'Contact',
+        url: '/contact',
+      }
+    ],
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
