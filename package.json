@@ -28,6 +28,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "heroku-postbuild": "gatsby build",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
