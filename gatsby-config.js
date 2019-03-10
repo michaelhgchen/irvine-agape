@@ -1,20 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'IACC',
+    title: '尔湾爱修基督教会',
     description: '爾灣愛修基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越',
     author: 'Michael Chen',
     pages: [
       {
-        label: 'Home',
+        label: '主页',
         url: '/',
       }, {
-        label: 'About',
+        label: '教会介绍',
         url: '/about',
       }, {
-        label: 'Blog',
-        url: '/blog',
-      }, {
-        label: 'Contact',
+        label: '联系',
         url: '/contact',
       }
     ],

@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 
 import Header from './header'
 import styles from './layout.module.scss'
+import './global.scss'
 
 class Layout extends Component {
   render() {

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-// import Image from '../components/image'
 import SEO from '../components/seo'
 
 import styles from './index.module.scss'
@@ -11,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={['irvine agape', 'christian church']} />
     <div className={styles.landingPageBg}>
       <div className={styles.hero}>
-        Hello
+        这是一个仁爱，喜乐，和平的教会
       </div>
     </div>
     {/* <Image /> */}

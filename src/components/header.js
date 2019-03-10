@@ -1,23 +1,29 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import logo from './logo.png'
 
 import styles from './header.module.scss';
 
 const Header = ({ links, siteTitle }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>
+      <div className={styles.logoWrapper}>
         <Link
-          className={styles.logoLink}
+          className={styles.logoContainer}
           to="/"
         >
-          <h1 className={styles.logoText}>
-            {siteTitle}
-          </h1>
+          <div className={styles.logo}>
+            <div className={styles.logoImg}>
+              <img alt={`${siteTitle} logo`} src={logo} />
+            </div>
+            <h1 className={styles.logoText}>
+              {siteTitle}
+            </h1>
+          </div>
         </Link>
       </div>
-      <nav className={styles.navContainer}>
+      <nav className={styles.navWrapper}>
         {
           links && links.map(link => (
             <Link

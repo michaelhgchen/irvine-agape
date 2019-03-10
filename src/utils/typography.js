@@ -10,6 +10,7 @@ const DEFAULT_FONT_STACK = [
 ]
 
 const typography = new Typography({
+  baseFontSize: '18px',
   bodyFontFamily: DEFAULT_FONT_STACK,
   headerFontFamily: DEFAULT_FONT_STACK,
 })
