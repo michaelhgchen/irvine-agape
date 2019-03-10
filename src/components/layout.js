@@ -1,5 +1,4 @@
 import { StaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
 import Header from './header'
@@ -8,7 +7,7 @@ import './global.scss'
 
 class Layout extends Component {
   render() {
-    const { children, fullWidthContent } = this.props;
+    const { children } = this.props;
 
     return (
       <StaticQuery
@@ -26,9 +25,9 @@ class Layout extends Component {
           }
         `}
         render={data => (
-          <div className={styles.container}>
+          <div className={styles.wrapper}>
             <div className={styles.header}>
-              <div className={styles.maxWidthWrapper}>
+              <div className="container no-padding">
                 <Header
                   links={data.site.siteMetadata.pages}
                   siteTitle={data.site.siteMetadata.title}
@@ -37,15 +36,9 @@ class Layout extends Component {
             </div>
             <main className={styles.content}>
               <div className={styles.fillContent}>
-                {
-                  fullWidthContent ? (
-                    children
-                  ) : (
-                    <div className={styles.maxWidthWrapper}>
-                      {children}
-                    </div>
-                  )
-                }
+                <div className="container">
+                  {children}
+                </div>
               </div>
             </main>
           </div>
@@ -53,15 +46,6 @@ class Layout extends Component {
       />
     )
   }
-}
-
-Layout.defaultProps = {
-  fullWidthContent: false,
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  fullWidthContent: PropTypes.bool,
 }
 
 export default Layout

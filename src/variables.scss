@@ -5,21 +5,26 @@ $color-primary-dark: #45677f;
 $color-secondary: #5d5c61;
 $color-secondary-light: #8a898e;
 $color-secondary-dark: #343337;
+$color-bg: #f0f0f0;
+$color-text:#525975 ;
 
-$color-text: black;
 
 $space-xs: 6px;
 $space-s: 12px;
 $space-m: 18px;
 $space-l: 24px;
+$space-xl: 36px;
 
+$min-height-app: 480px;
 $min-width-app: 480px;
 $max-width-app: 1600px;
 
-$min-width-xs: 480px;
-$min-width-s: 720px;
-$min-width-m: 1080px;
-$min-width-l: 1200px;
-
 $font-size: 16px;
 $font-size-l: 24px;
+
+
+// unused grid vars
+$breakpoint-width-xs: 480px;
+$breakpoint-width-s: 720px;
+$breakpoint-width-m: 1080px;
+$breakpoint-width-l: 1200px;

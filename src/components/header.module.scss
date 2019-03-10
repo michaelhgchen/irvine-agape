@@ -1,8 +1,10 @@
 @import '../variables.scss';
 
 .container {
+  border-bottom: 1px solid $color-bg;
   display: flex;
   justify-content: space-between;
+  padding: $space-l;
 }
 
 .logo-wrapper {

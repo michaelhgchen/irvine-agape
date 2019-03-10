@@ -1,9 +1,10 @@
 @import '../variables.scss';
 
-.container {
-  height: 100vh;
+.wrapper {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  min-height: $min-height-app;
 }
 
 .header {
@@ -11,10 +12,10 @@
 }
 
 .content {
+  background-color: $color-bg;
   flex-grow: 1;
   position: relative;
 }
-
 
 // hack to circumvent height calculation of flex children sucking
 // https://stackoverflow.com/questions/35899194/css-height100-not-working-on-table-inside-flexbox-child
@@ -25,11 +26,4 @@
   left: 0;
   right: 0;
   top: 0;
-}
-
-.max-width-wrapper {
-  margin: auto;
-  max-width: $max-width-app;
-  padding: $space-l;
-  width: 100%;
 }
