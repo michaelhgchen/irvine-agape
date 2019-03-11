@@ -27,6 +27,12 @@ const SEO = ({ author, description, lang, meta, keywords, title }) => {
             htmlAttributes={{
               lang,
             }}
+            link={[
+              {"rel": "icon",
+               "type": "image/png",
+               "href": "favicon.ico"
+              }
+            ]}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
