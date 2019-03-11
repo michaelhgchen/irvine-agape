@@ -9,19 +9,14 @@ const Header = ({ links, siteTitle }) => {
   return (
     <div className={styles.container}>
       <div className={styles.logoWrapper}>
-        <Link
-          className={styles.logoContainer}
-          to="/"
-        >
-          <div className={styles.logo}>
-            <div className={styles.logoImg}>
-              <img alt={`${siteTitle} logo`} src={logo} />
-            </div>
-            <h1 className={styles.logoText}>
-              {siteTitle}
-            </h1>
+        <div className={styles.logo}>
+          <div className={styles.logoImg}>
+            <img alt={`${siteTitle} logo`} src={logo} />
           </div>
-        </Link>
+          <h1 className={styles.logoText}>
+            {siteTitle}
+          </h1>
+        </div>
       </div>
       <nav className={styles.navWrapper}>
         {

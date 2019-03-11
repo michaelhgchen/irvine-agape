@@ -36,9 +36,7 @@ class Layout extends Component {
             </div>
             <main className={styles.content}>
               <div className={styles.fillContent}>
-                <div className="container">
-                  {children}
-                </div>
+                {children}
               </div>
             </main>
           </div>

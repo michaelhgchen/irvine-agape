@@ -5,11 +5,14 @@ module.exports = {
     author: 'Michael Chen',
     pages: [
       {
-        label: '教会介绍',
-        url: '#about',
+        label: '主页',
+        url: '#home',
       }, {
         label: '访问',
         url: '#visit',
+      }, {
+        label: '教会介绍',
+        url: '#about',
       }
     ],
   },

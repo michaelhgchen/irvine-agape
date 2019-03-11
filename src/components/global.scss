@@ -19,10 +19,18 @@ html {
   margin-right: -$space-l;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.vertical-padding {
+  padding-bottom: $space-l;
+  padding-top: $space-l;
+}
+
 .divider {
-  border: 2px dotted $color-bg;
   height: 1px;
-  margin: 100px (-$space-l);
+  padding: $space-xl;
 }
 
 // grid
@@ -30,7 +38,8 @@ html {
   background-color: white;
   margin: auto;
   max-width: $max-width-app;
-  padding: 0 $space-l;
+  padding-left: $space-l;
+  padding-right: $space-l;
 
   &.no-padding {
     padding: 0;

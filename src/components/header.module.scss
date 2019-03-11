@@ -3,13 +3,18 @@
 .container {
   border-bottom: 1px solid $color-bg;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: $space-l;
+
+  @media screen and (min-width: $breakpoint-width-s) {
+    justify-content: space-between;
+  }
 }
 
 .logo-wrapper {
   align-items: center;
   display: flex;
+  user-select: none;
 }
 
 .logo-img {
@@ -25,15 +30,6 @@
   }
 }
 
-.logo-container {
-  color: inherit;
-  text-decoration: none;
-
-  &:active, &:hover, &:visited {
-    color: inherit;
-  }
-}
-
 .logo {
   position: relative;
   padding-left: 58px;
@@ -45,7 +41,11 @@
 
 .nav-wrapper {
   align-items: center;
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: $breakpoint-width-s) {
+    display: flex;
+  }
 }
 
 .nav-link {
