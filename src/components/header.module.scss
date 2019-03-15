@@ -4,10 +4,11 @@
   border-bottom: 1px solid $color-bg;
   display: flex;
   justify-content: center;
-  padding: $space-l;
+  padding: $space-m;
 
   @media screen and (min-width: $breakpoint-width-s) {
     justify-content: space-between;
+    padding: $space-l;
   }
 }
 

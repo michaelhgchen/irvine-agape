@@ -4,33 +4,12 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProfileImage from '../components/image';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 
 import styles from './index.module.scss'
 
 // TOOD: make this pull 10 random photos from FB
-const IMAGES = [
-  {
-    alt: 'lunch at home',
-    src: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/53617054_2041278102608569_7058094914873065472_n.jpg?_nc_cat=103&_nc_ht=scontent-sjc3-1.xx&oh=fe16f9a9038310f64a45c92fd142d13e&oe=5D0BB1CB',
-  },
-  {
-    alt: 'baptism',
-    src: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/52134303_2021565291246517_8429506010032373760_n.jpg?_nc_cat=104&_nc_ht=scontent-sjc3-1.xx&oh=dd44a4a2fae94401103d0cc32d6e1cf9&oe=5D23110F',
-  },
-  {
-    alt: 'Pastor Chen delivering a message',
-    src: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/51141401_1990966230973090_5830775613102751744_n.jpg?_nc_cat=102&_nc_ht=scontent-sjc3-1.xx&oh=5a77386f43029a6695e22352c249c5c8&oe=5D0BC3BA',
-  },
-  {
-    alt: 'group picture after a service',
-    src: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/46878959_1898130546923326_1867169824287752192_n.jpg?_nc_cat=110&_nc_ht=scontent-sjc3-1.xx&oh=979526f27e2250edefbaca37c0240802&oe=5D1EA1EF',
-  },
-  {
-    alt: 'lunch after service',
-    src: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/42518939_1811576422245406_7766408603363180544_n.jpg?_nc_cat=103&_nc_ht=scontent-sjc3-1.xx&oh=f63ebf159dc886447d5da3c1418b1fdd&oe=5D2266A8',
-  }
-];
+const IMAGES = [];
 
 const IndexPage = () => (
   <Layout>
@@ -102,7 +81,7 @@ const IndexPage = () => (
     </section>
     <section>
       <div className="container">
-        {/* <Carousel autoPlay>
+        <Carousel autoPlay infiniteLoop>
           {
             IMAGES.map(({src, alt}) => (
               <div key={alt}>
@@ -110,7 +89,7 @@ const IndexPage = () => (
               </div>
             ))
           }
-        </Carousel> */}
+        </Carousel>
       </div>
     </section>
   </Layout>
