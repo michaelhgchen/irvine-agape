@@ -13,7 +13,7 @@ const IMAGES = [];
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="主页" keywords={['尔湾爱修基督教会', '爾灣愛修基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越']} />
+    <SEO title="主页" keywords={['尔湾基督教会', '爾灣基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越']} />
     <section className={styles.theFoldBg} id="home">
       <div className={styles.title}>
         <h1 className="text-center">这是一个仁爱，喜乐，和平的教会</h1>

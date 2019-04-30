@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: '尔湾爱修基督教会',
-    description: '爾灣愛修基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越',
+    title: '尔湾基督教会',
+    description: '爾灣基督教會 - 仁愛 喜樂 和平 健康 昌盛 卓越',
     author: 'Michael Chen',
     pages: [
       {
